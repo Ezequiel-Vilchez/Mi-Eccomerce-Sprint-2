@@ -1,0 +1,59 @@
+[
+{
+    "id": 1,
+    "nombre": "Camiseta de boca juniors",
+    "precio": 149999,
+    "imagen": "/img/boquita.jpg",
+    "destacado": true
+},
+{
+    "id": 2,
+    "nombre": "Camiseta de river plate",
+    "precio": 149999,
+    "imagen": "/img/river.jpg",
+    "destacado": true
+},
+{
+    "id": 3,
+    "nombre": "Botines de futbol",
+    "precio": 149999,
+    "imagen": "",
+    "destacado": false
+},
+{
+    "id": 4,
+    "nombre": "Camiseta de la seleccion Argentina",
+    "precio": 149999,
+    "imagen": "/img/seleccion.jpg",
+    "destacado": true
+},
+{
+    "id": 5,
+    "nombre": "Botines de futbol 2",
+    "precio": 149999,
+    "imagen": "/img/botines2.jpg",
+    "destacado": true
+},
+{
+    "id": 6,
+    "nombre": "Botines de futbol 3",
+    "precio": 149999,
+    "imagen": "/img/botines3.jpg",
+    "destacado": true
+},
+{
+    "id": 7,
+    "nombre": "Pelota de futbol",
+    "precio": 149999,
+    "imagen": "/img/pelota1.jpg",
+    "destacado": true
+},
+{
+    "id": 8,
+    "nombre": "Pelota de futbol 2",
+    "precio": 149999,
+    "imagen": "/img/pelota2.jpg",
+    "destacado": false
+}
+
+]

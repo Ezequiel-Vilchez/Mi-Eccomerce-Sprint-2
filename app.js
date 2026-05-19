@@ -22,6 +22,10 @@ app.get('/descripcion', (req, res) => {
     res.render('pages/descripcion');
 });
 
+app.get('/checkout', (req, res) =>{
+    res.render('pages/checkout')
+})
+
 app.use('/validarFormulario', (req, res) => {
     res.render('models/validarFormulario');
 });

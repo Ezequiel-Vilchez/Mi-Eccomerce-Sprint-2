@@ -3,7 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 220px; /*para dejar espacio lateral */
+  padding: 10px 220px;
+  /*para dejar espacio lateral */
   background-color: rgb(0, 0, 0);
   z-index: 100;
   position: fixed;
@@ -12,24 +13,26 @@
   width: 100%;
   box-sizing: border-box;
 }
-.centro{
-    display: flex;
+
+.centro {
+  display: flex;
   align-items: center;
   justify-content: center;
   flex: 1;
   gap: 10px;
 }
 
- .logo{
-    display: flex;
-    color: rgb(255, 255, 255);
- }
- .logo img{
-    width: 130px;
-    height: 60px;
-    align-items: center;
-    margin-right: 10px;
- }
+.logo {
+  display: flex;
+  color: rgb(255, 255, 255);
+}
+
+.logo img {
+  width: 130px;
+  height: 60px;
+  align-items: center;
+  margin-right: 10px;
+}
 
 .barra {
   width: 700px;
@@ -37,7 +40,7 @@
   margin: 0 10px;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 .barra input {
@@ -67,6 +70,7 @@
   height: 30px;
   text-align: center;
 }
+
 .boton {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
@@ -80,11 +84,12 @@
   font-size: 13px;
   text-decoration: none;
 }
-  .link{
-    display: block;
-    text-decoration: none;
-    color: white; 
-  }
+
+.link {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
 
 /* ESTILOS GENERALES */
 body {
@@ -101,8 +106,10 @@ body {
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-  margin-left: 220px;  /* espacio para video lateral izquierdo */
-  margin-right: 220px; /* espacio para video lateral derecho */
+  margin-left: 220px;
+  /* espacio para video lateral izquierdo */
+  margin-right: 220px;
+  /* espacio para video lateral derecho */
   padding-top: 2rem;
 }
 
@@ -117,7 +124,7 @@ body {
   border: 3px solid;
   border-image: linear-gradient(45deg, red, yellow, lime, cyan, blue, magenta, red) 1;
   animation: borde-rgb 5s linear infinite;
-  box-shadow: 0 0 20px rgba(255,255,255,0.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s;
 }
 
@@ -164,15 +171,19 @@ h3 {
   0% {
     border-image-source: linear-gradient(0deg, red, orange, yellow, green, blue, indigo, violet);
   }
+
   25% {
     border-image-source: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
   }
+
   50% {
     border-image-source: linear-gradient(180deg, red, orange, yellow, green, blue, indigo, violet);
   }
+
   75% {
     border-image-source: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
   }
+
   100% {
     border-image-source: linear-gradient(360deg, red, orange, yellow, green, blue, indigo, violet);
   }
@@ -219,6 +230,7 @@ h3 {
   }
 
 }
+
 .footer {
   background-color: #000000;
   color: white;

@@ -24,7 +24,11 @@ app.get('/descripcion', (req, res) => {
 
 app.get('/checkout', (req, res) =>{
     res.render('pages/checkout')
-})
+});
+
+app.get('/carrito', (req, res) => {
+    res.render('pages/carrito');
+});
 
 app.post('/register', (req, res) => {
     res.render('pages/index');

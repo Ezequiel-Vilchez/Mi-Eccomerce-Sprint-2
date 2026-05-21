@@ -1,39 +1,15 @@
 const express = require('express');
 const app = express();
+const productRoutes = require('./routes/productRoute');
+
 
 app.set('view engine', 'ejs');
 
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {
-    res.render('pages/login');
-});
+app.use ('/', productRoutes);
+app.use(express.urlencoded({ extended: false }));
 
-app.get('/register', (req, res) => {
-    res.render('pages/register');
-});
-
-
-app.get('/index', (req, res) => {
-    res.render('pages/index');
-});
-
-app.get('/descripcion', (req, res) => {
-    res.render('pages/descripcion');
-});
-
-app.get('/checkout', (req, res) =>{
-    res.render('pages/checkout')
-});
-
-app.get('/carrito', (req, res) => {
-    res.render('pages/carrito');
-});
-
-app.post('/register', (req, res) => {
-    res.render('pages/index');
-
-});
 
 app.use((req, res) => {
     res.status(404).send('404 Not Found');

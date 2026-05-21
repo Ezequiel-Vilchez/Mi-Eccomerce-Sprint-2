@@ -23,9 +23,6 @@ const productController = {
     
     descripcion: (req, res) => {
         res.render('pages/descripcion');
-    },
-    descripcionRiver: (req, res) => {
-        res.render('pages/descripcionRiver');
     }
 };
 

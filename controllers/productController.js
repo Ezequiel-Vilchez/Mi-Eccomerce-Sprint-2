@@ -1,3 +1,6 @@
+const fs = require('fs');
+const path = require('path');
+
 const productController = {
     
     login: (req, res) => {
@@ -22,7 +25,33 @@ const productController = {
     },
     
     descripcion: (req, res) => {
-        res.render('pages/descripcion');
+        const productsFilePath = path.join(__dirname, '../data/productos.json');
+        const productsData = fs.readFileSync(productsFilePath, 'utf-8');
+        const allProducts = JSON.parse(productsData);
+
+        const productId = parseInt(req.params.id);
+        const productoPrincipal = allProducts.find(p => p.id === productId);
+
+        if(!productoPrincipal){
+            return res.status(404).send('No se encontro el producto');
+        }
+
+        let relacion = allProducts.filter(
+            p => p.categoria &&
+            p.categoria === productoPrincipal.categoria &&
+            p.id !== productId
+        );
+
+        if(relacion.length > 4){
+            relacion = relacion.sort(() => 0.5 - Math.random());
+        }
+
+        relacion = relacion.slice(0,4);
+
+        res.render('pages/descripcion', {
+            producto: productoPrincipal,
+            relacion: relacion
+        });
     }
 };
 

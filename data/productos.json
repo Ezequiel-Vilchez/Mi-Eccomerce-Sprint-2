@@ -4,56 +4,144 @@
     "nombre": "Camiseta de boca juniors",
     "precio": 149999,
     "imagen": "/img/boquita.jpg",
-    "destacado": true
+    "destacado": true,
+    "categoria": "Camisetas"
 },
 {
     "id": 2,
     "nombre": "Camiseta de river plate",
     "precio": 149999,
     "imagen": "/img/river.jpg",
-    "destacado": true
+    "destacado": true,
+    "categoria": "Camisetas"
 },
 {
     "id": 3,
-    "nombre": "Botines de futbol",
-    "precio": 149999,
-    "imagen": "",
-    "destacado": false
-},
-{
-    "id": 4,
     "nombre": "Camiseta de la seleccion Argentina",
     "precio": 149999,
     "imagen": "/img/seleccion.jpg",
-    "destacado": true
+    "destacado": true,
+    "categoria": "Camisetas"
+},
+{
+    "id": 4,
+    "nombre": "Camiseta de rosario central",
+    "precio": 149999,
+    "imagen": "/img/central.jpg",
+    "destacado": true,
+    "categoria": "Camisetas"
 },
 {
     "id": 5,
-    "nombre": "Botines de futbol 2",
+    "nombre": "Camiseta de san lorenzo",
     "precio": 149999,
-    "imagen": "/img/botines2.jpg",
-    "destacado": true
+    "imagen": "/img/sanlorenzo.jpg",
+    "destacado": true,
+    "categoria": "Camisetas"
 },
 {
     "id": 6,
-    "nombre": "Botines de futbol 3",
+    "nombre": "Camiseta de platense",
     "precio": 149999,
-    "imagen": "/img/botines3.jpg",
-    "destacado": true
+    "imagen": "/img/platense.webp",
+    "destacado": true,
+    "categoria": "Camisetas"
 },
 {
     "id": 7,
-    "nombre": "Pelota de futbol",
+    "nombre": "Botines 1",
     "precio": 149999,
-    "imagen": "/img/pelota1.jpg",
-    "destacado": true
+    "imagen": "/img/botin1.jpg",
+    "destacado": true,
+    "categoria": "Botines"
 },
 {
     "id": 8,
-    "nombre": "Pelota de futbol 2",
+    "nombre": "Botines 2",
+    "precio": 149999,
+    "imagen": "/img/botin2.jpg",
+    "destacado": true,
+    "categoria": "Botines"
+},
+{
+    "id": 9,
+    "nombre": "Botines 3",
+    "precio": 149999,
+    "imagen": "/img/botin3.jpg",
+    "destacado": true,
+    "categoria": "Botines"
+},
+{
+    "id": 10,
+    "nombre": "Botines 4",
+    "precio": 149999,
+    "imagen": "/img/botin4.jpg",
+    "destacado": true,
+    "categoria": "Botines"
+},
+{
+    "id": 11,
+    "nombre": "Botines 5",
+    "precio": 149999,
+    "imagen": "/img/botin5.jpg",
+    "destacado": true,
+    "categoria": "Botines"
+},
+{
+    "id": 12,
+    "nombre": "Guantes 1",
+    "precio": 149999,
+    "imagen": "/img/guantes1.jpg",
+    "destacado": true,
+    "categoria": "Guantes"
+},
+{
+    "id": 13,
+    "nombre": "Guantes 2",
+    "precio": 149999,
+    "imagen": "/img/guantes2.jpg",
+    "destacado": true,
+    "categoria": "Guantes"
+},
+{
+    "id": 14,
+    "nombre": "Guantes 3",
+    "precio": 149999,
+    "imagen": "/img/guantes3.jpg",
+    "destacado": true,
+    "categoria": "Guantes"
+},
+{
+    "id": 15,
+    "nombre": "Guantes 4",
+    "precio": 149999,
+    "imagen": "/img/guantes4.jpg",
+    "destacado": true,
+    "categoria": "Guantes"
+},
+{
+    "id": 16,
+    "nombre": "Guantes 5",
+    "precio": 149999,
+    "imagen": "/img/guantes5.jpg",
+    "destacado": true,
+    "categoria": "Guantes"
+},
+{
+    "id": 17,
+    "nombre": "Pelota 1",
+    "precio": 149999,
+    "imagen": "/img/pelota1.jpg",
+    "destacado": true,
+    "categoria": "Pelotas"
+},
+{
+    "id": 18,
+    "nombre": "Pelota 2",
     "precio": 149999,
     "imagen": "/img/pelota2.jpg",
-    "destacado": false
+    "destacado": true,
+    "categoria": "Pelotas"
 }
 
 ]

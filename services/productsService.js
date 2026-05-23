@@ -50,6 +50,38 @@ const productsService = {
             p.categoria &&
             p.categoria.toLowerCase() === categoryParam.toLowerCase()
         );
+    },
+
+    searchProducts: (query) => {
+        const allProducts = productsService._getAllProducts();
+        
+        if (!query) return [];
+        
+        return allProducts.filter(producto =>
+            producto.nombre.toLowerCase().includes(query.toLowerCase())
+        );
+    },
+    getCartItems: (sessionCart) => {
+        
+        if (!sessionCart || sessionCart.length === 0) {
+            return [];
+        }
+
+        const allProducts = productsService._getAllProducts();
+
+        // Combinamos la información de la sesión con los datos reales del JSON
+        return sessionCart.map(item => {
+            const productoCompleto = allProducts.find(p => p.id === item.productId);
+            
+            return {
+                id: productoCompleto.id,
+                nombre: productoCompleto.nombre,
+                precio: productoCompleto.precio,
+                imagen: productoCompleto.imagen,
+                quantity: item.quantity,
+                subtotal: productoCompleto.precio * item.quantity
+            };
+        });
     }
 };
 

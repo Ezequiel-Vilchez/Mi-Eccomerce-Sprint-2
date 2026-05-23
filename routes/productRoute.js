@@ -8,5 +8,6 @@ router.post('/register', controller.procesarRegister);
 router.get('/index', controller.index);
 router.get('/checkout', controller.checkout);
 router.get('/products/:id', controller.descripcion);
+router.get('/carrito', (req, res) => res.redirect('/cart'));
 
 module.exports = router;

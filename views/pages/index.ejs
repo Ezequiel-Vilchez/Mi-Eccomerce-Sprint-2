@@ -25,7 +25,7 @@
         <a href="perfil.html"><button class="boton"><img src="/img/usuario.png" width="30px" height="30px"></button></a>
       </div>
       <div class="icono">
-        <a href="/carrito"><button class="boton"><img src="/img/carrito-de-compras.png" width="30px"
+        <a href="/cart"><button class="boton"><img src="/img/carrito-de-compras.png" width="30px"
               height="30px"></button></a>
       </div>
     </div>
@@ -239,22 +239,26 @@
       </section>
     </a>
 
-<!-- Lo mas Pedido  -->
-<h2 class="Titulos1">Los más pedidos</h2>
+    <!-- Lo mas Pedido  -->
+    <h2 class="Titulos1">Los más pedidos</h2>
 
-  <% topProducts.forEach(producto => { %>
-    <a class="link" href="/products/<%= producto.id %>">
-     <section class="tarjeta">
-       <h2><%= producto.nombre %></h2>
-        <ul>
-         <img src="<%= producto.imagen ? producto.imagen : '/img/default-fallback.png' %>" alt="<%= producto.nombre %>">
-        
-          <li>$ <%= producto.precio %></li>
-          <li>Los productos personalizados no están sujetos a cambios y/o devoluciones.</li>
-      </ul>
-    </section>
-  </a>
-  <% }) %>
+    <% topProducts.forEach(producto=> { %>
+      <a class="link" href="/products/<%= producto.id %>">
+        <section class="tarjeta">
+          <h2>
+            <%= producto.nombre %>
+          </h2>
+          <ul>
+            <img src="<%= producto.imagen ? producto.imagen : '/img/default-fallback.png' %>"
+              alt="<%= producto.nombre %>">
+
+            <li>$ <%= producto.precio %>
+            </li>
+            <li>Los productos personalizados no están sujetos a cambios y/o devoluciones.</li>
+          </ul>
+        </section>
+      </a>
+      <% }) %>
 
   </main>
 

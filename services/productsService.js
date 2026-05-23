@@ -11,7 +11,6 @@ const productsService = {
 
     getSugeridos: () => {
         const allProducts = productsService._getAllProducts();
-        
         let destacados = allProducts.filter(producto => producto.destacado === true);
         return destacados.sort(() => 0.5 - Math.random()).slice(0, 5);
     },
@@ -20,7 +19,6 @@ const productsService = {
         const allProducts = productsService._getAllProducts();
         let destacados = allProducts.filter(producto => producto.destacado === true);
         let masPedidos = [...destacados];
-        
         if (masPedidos.length < 10) {
             const otros = allProducts.filter(p => p.destacado !== true);
             masPedidos = [...masPedidos, ...otros];
@@ -45,14 +43,14 @@ const productsService = {
         }
         return relacion.slice(0, 4);
     },
+
     getByCategory: (categoryParam) => {
         const allProducts = productsService._getAllProducts();
-        return allProducts.filter(p => 
-            p.categoria && 
+        return allProducts.filter(p =>
+            p.categoria &&
             p.categoria.toLowerCase() === categoryParam.toLowerCase()
         );
     }
-
 };
 
 module.exports = productsService;
